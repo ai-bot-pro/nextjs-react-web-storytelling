@@ -1,3 +1,7 @@
+<div align="center">
+    <img src="./public/bg.jpg" alt="">
+</div>
+
 # Intro
 
 This app demos a voice-controlled storytelling chatbot. It will start with the bot asking you what kind of story you'd like to hear (e.g. a fairy tale, a mystery, etc.). After each scene, the bot will pause to ask for your input. Direct the story any way you choose!
