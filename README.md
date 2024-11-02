@@ -1,16 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`c3`](https://developers.cloudflare.com/pages/get-started/c3).
+# Intro
 
+This app demos a voice-controlled storytelling chatbot. It will start with the bot asking you what kind of story you'd like to hear (e.g. a fairy tale, a mystery, etc.). After each scene, the bot will pause to ask for your input. Direct the story any way you choose!
+
+- bot server code: https://github.com/ai-bot-pro/achatbot/blob/main/src/cmd/bots/image/storytelling/daily_bot.py
+- run bot api server on colab: https://github.com/weedge/doraemon-nb/blob/main/achatbot_daily_storytelling_bot.ipynb 
+- change `BOT_SERVICE_URL`, `BOT_SERVICE_AUTH` if need auth
+
+
+------
+# Dev and Deploy on Cloudflare
 ## Getting Started
 
 First, run the development server:
 
 ```bash
+npm run test
 npm run dev
 # or
+yarn test
 yarn dev
 # or
+pnpm test
 pnpm dev
 # or
+bun test
 bun dev
 ```
 
@@ -20,6 +33,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 Besides the `dev` script mentioned above `c3` has added a few extra scripts that allow you to integrate the application with the [Cloudflare Pages](https://pages.cloudflare.com/) environment, these are:
   - `pages:build` to build the application for Pages using the [`@cloudflare/next-on-pages`](https://github.com/cloudflare/next-on-pages) CLI
+  - `cf-typegen` to generate environment in env.d.ts from `wrangler.toml` vars, bings(kv,d1,r2,queue) .
   - `preview` to locally preview your Pages application using the [Wrangler](https://developers.cloudflare.com/workers/wrangler/) CLI
   - `deploy` to deploy your Pages application using the [Wrangler](https://developers.cloudflare.com/workers/wrangler/) CLI
 
