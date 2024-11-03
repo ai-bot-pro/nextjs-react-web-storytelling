@@ -13,6 +13,7 @@
 
 .transcript{
     @apply font-semibold;
+    @apply bg-gray-900/80 rounded-md px-4 py-2;
 }
 
 .transcript span{
