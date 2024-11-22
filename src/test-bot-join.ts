@@ -6,6 +6,8 @@ import { RunJoinBotConfig } from './app/types';
 
 const serverUrl = 'http://localhost:4321/bot_join/DummyBot';
 const serverAuth = 'your-auth-token';
+// no use nextjs env
+console.log(serverUrl, RunJoinBotConfig);
 
 (async () => {
     try {

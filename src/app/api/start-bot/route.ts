@@ -13,6 +13,7 @@ export async function POST(req: NextRequest) {
   const serverAuth = getRequestContext().env.BOT_SERVICE_AUTH;
 
   try {
+    console.log(serverUrl, config)
     const result = await post(
       serverUrl, serverAuth,
       { "config": config }

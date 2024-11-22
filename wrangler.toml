@@ -17,8 +17,10 @@ pages_build_output_dir = ".vercel/output/static"
 # Note: Use secrets to store sensitive data.
 # - https://developers.cloudflare.com/pages/functions/bindings/#secrets
 [vars]
-#BOT_SERVICE_URL = "https://5c53-34-34-27-52.ngrok-free.app/bot_join/DailyStoryTellingBot"
-BOT_SERVICE_URL = "http://localhost:4321/bot_join/DailyStoryTellingBot"
+BOT_SERVICE_URL = "https://weedge-achatbot--fastapi-webrtc-audio-bot-srv-app.modal.run/bot_join/DailyStoryTellingBot"
+#BOT_SERVICE_URL = "https://weedge-achatbot--fastapi-webrtc-audio-bot-srv-app-dev.modal.run/bot_join/DailyStoryTellingBot"
+#BOT_SERVICE_URL = "https://74dd-34-48-67-34.ngrok-free.app/bot_join/DailyStoryTellingBot"
+#BOT_SERVICE_URL = "http://localhost:4321/bot_join/DailyStoryTellingBot"
 BOT_SERVICE_AUTH = ""
 
 
