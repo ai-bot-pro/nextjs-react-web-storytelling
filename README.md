@@ -8,7 +8,8 @@ This app demos a voice-controlled storytelling chatbot. It will start with the b
 
 - bot server code: https://github.com/ai-bot-pro/achatbot/blob/main/src/cmd/bots/image/storytelling/daily_bot.py
 - run bot api server on colab: https://github.com/weedge/doraemon-nb/blob/main/achatbot_daily_storytelling_bot.ipynb 
-- change `BOT_SERVICE_URL`, `BOT_SERVICE_AUTH` if need auth
+- change `BOT_SERVICE_URL`, `BOT_SERVICE_AUTH` if need auth for api edge serve env (use wrangler.toml to gen to `env.d.ts` with `pnpm cf-typegen`)
+- cp `env.example` to `.env.local` to local dev for nextjs FE page local env
 
 
 ------
